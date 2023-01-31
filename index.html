@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
     <script src="/path/to/flickity.pkgd.min.js"></script>
 <link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-3.6.3.min.js"></script>
     <style>
         .btn-outline-primary:hover {
             background-color: black !important;
@@ -356,34 +357,110 @@ transition:2s ;
 
 
 <div class="container d-flex justify-content-center">
-    <button type="button" class="btn btn-light btn-lg">Drama</button>
-    <button type="button" class="btn btn-light btn-lg">Ballet</button>
-    <button type="button" class="btn btn-light btn-lg">Opera</button>
+    <button type="button" class="btn btn-light btn-lg" id="drama">Drama</button>
+    <button type="button" class="btn btn-light btn-lg" id="ballet">Ballet</button>
+    <button type="button" class="btn btn-light btn-lg" id="opera">Opera</button>
 </div>
 
 
-<div class="container">
+<div class="container mt-5" id="div1">
     <div class="row">
         <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+                <img src="image/c1.jpg" class="card-img" alt="...">
+                <a href="#" class="btn  btn-primary d-flex"
+                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;"><h2>Read
+                more</h2></a>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+                <img src="image/c2.jpg" class="card-img" alt="...">
+                <a href="#" class="btn  btn-primary d-flex"
+                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;"><h2>Read
+                more</h2></a>
             </div>
           </div>
         </div>
       </div>
 </div>
+<div class="container mt-5" id="div2">
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <img src="image/c3.jpg" class="card-img" alt="...">
+                <a href="#" class="btn  btn-primary d-flex"
+                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;"><h2>Read
+                more</h2></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <img src="image/c4.jpg" class="card-img" alt="...">
+                <a href="#" class="btn  btn-primary d-flex"
+                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;"><h2>Read
+                more</h2></a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="container mt-5" id="div3">
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <img src="image/c5.jpg" class="card-img" alt="...">
+                <a href="#" class="btn  btn-primary d-flex"
+                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;"><h2>Read
+                more</h2></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+                <img src="image/c6.jpg" class="card-img" alt="...">
+                <a href="#" class="btn  btn-primary d-flex"
+                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;"><h2>Read
+                more</h2></a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+
+$(document).ready(function(){
+    $("#drama").click(function(){
+        $("#div1").show();
+    })
+    $("#ballet").click(function(){
+        $("#div2").hide();
+    })
+    $("#opera").click(function(){
+        $("#div3").hide();
+    })
+});
+
+
+</script>
+
+
 
 
 </body>
