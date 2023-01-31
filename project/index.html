@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo.png">
+    <title>Theatre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <script src="/path/to/flickity.pkgd.min.js"></script>
+<link rel="stylesheet" href="style.css">
+    <style>
+        .btn-outline-primary:hover {
+            background-color: black !important;
+            color:white !important;
+        }
+
+        .btn-primary:hover {
+            background-color:black!important;
+            color: white !important;
+            border: 1px solid white !important;
+        }
+        *{
+            font-family: 'Playfair Display', serif;
+        }
+        .card-title{font-size:50px;
+            text-shadow: 20px;
+            font-weight: lighter;
+            
+        
+        }
+        .card-text2{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style:italic;
+            color: darkorange;
+        }
+        /* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width:500px;
+  height: 300px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.container-fluide{
+    background-color: black;
+}
+.memon{
+    background-color:black;
+    height: 200px;
+}
+.btn{
+    width: 200px;
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+h1{
+    color: aliceblue;
+  margin-left: 30px;
+}
+h3{
+    color:  rgb(136, 107, 52);
+    margin-left: 30px;
+}
+h3:hover{
+
+    color:white ;
+    transition: 3s;
+}
+h1:hover{
+
+color: darkgray;
+transition:2s ;
+
+
+
+}
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="image/logo.png" height="60px" width="80px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Upcoming Events </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Theatre Shows
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Urdu Theatre Show</a></li>
+                            <li><a class="dropdown-item" href="#">Hindi Theatre Show</a></li>
+                            <li><a class="dropdown-item" href="#">English Theatre Show</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Auditoriums </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Gallery </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Magazine </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+
+                    <i class="fa fa-search fs-5 pe-3 text-white"></i>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+       
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/curzon-mayfair.jpg" class="d-block w-100" alt="...">
+                
+                <div class="carousel-caption d-none d-md-block my-auto">
+                    <div>
+                        
+                    <button class="btn btn-lg btn-primary bg-white text-dark" style="border: none; border-radius: 0%;margin-bottom: 220px;">Book Now</button>
+                    <button class="btn btn-lg btn-outline-primary ms-3 text-white"
+                        style="border: 1px solid white; border-radius: 0%; margin-bottom: 220px;  ">Discover</button>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="card text-white" style="background-color: black;">
+        <div class="card-body d-flex justify-content-between mt-5 mb-5 ps-5">
+            <div>
+                <h5 class="card-title fs-3" style="margin-left: 150px;">Get your tickets</h5>
+                <p class="card-text" style="margin-left: 150px;">Choose the play and the day on which you would like to see it.</p>
+            </div>
+            <div class="pe-5"> 
+                <a href="#" class="btn  btn-primary d-flex"
+                    style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;padding-left: 50px;padding-top: 17px;font-size: medium;margin-right: 90px;">BUY
+                    TICKETS</a>
+            </div>
+        </div>
+    </div>
+<!-- <div class="img2";></div>
+    <h1>Welcome to The Theatre</h1>
+    <img style="width: 100%;height:500px ;" src="./image/pngtree-gray-gradient-stage-light-background-image_362702.jpg" alt="">
+
+    <h1>Welcome to The Theatre</h1>
+</div> -->
+<div class="container-fluid">
+<div class="card bg-dark text-dark wd-300 hi-400">
+    <img src="./image/pngtree-gray-gradient-stage-light-background-image_362702.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay" style="text-align:center;margin-top: 100px;">
+      <h5 class="card-title">Welcome to The Theatre </h5>
+      <p class="card-text mt-4">When thou shalt be disposed to set me light
+        And place my merit in the eye of scorn,<br>Upon thy side against myself I’ll fight And prove thee virtuous,<br> though thou art forsworn.With mine own weakness being best acquainted,<br>Upon thy part I can set down a story Of faults conceal’d,<br> wherein I am attainted, That thou in losing me shalt win much glory. </p>
+      <p class="card-text2 pt-5 fs-3 ">Willaim Shakespeare's</p>
+
+    </div>
+  </div>
+  </div>
+
+<div id="raza">
+    <h1 class="j">Featured Shows</h1>
+    <img class="hamza" src="./image/cover (3).jpg" alt="">
+   <div>
+    
+   </div>
+</div>
+
+
+
+
+
+
+
+<div class="container-fluide">
+  
+
+    <!-- Flickity HTML init -->
+    <div class="carousel"
+      data-flickity='{ "wrapAround": true }' style="background-color:black ;">
+      <div>
+      <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/8571476419_2d8fe904eb_o-t-560x340.jpg" alt="" class="carousel-cell">
+    <div class="memon">
+        <H1>Queen Anne</H1>
+        <h3>Performance</h3>
+        <div class="anfal">
+        <a href="#" class="btn  btn-primary d-flex"
+                    style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;"><h2>Read
+                    more</h2></a>
+<p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4 september to 4 November</p>
+                </div>         
+                        
+                    
+    </div>
+    </div>
+    <div>
+    <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/1v1b15n576vb-t-560x340.jpg" alt="" class="carousel-cell">
+
+    <div class="anne">
+<h1 >The colour purple</h1>
+<h3>Performance</h3>
+<div class="anfal">
+<a href="#" class="btn  btn-primary d-flex"
+                    style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;"><h2>Read
+                    more</h2></a>
+                    
+                    <p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4 september to 4 November</p>
+                </div>
+    </div>
+   </div>
+    <div>
+        <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/8572552460_df514f1e42_o-t-560x340.jpg" alt="" class="carousel-cell">
+        
+        <div class="n">
+            <h1>The majority</h1>
+            <h3>Performance</h3>
+            <div class="anfal">
+            <a href="#" class="btn  btn-primary d-flex"
+                    style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;"><h2>Read
+                    more</h2></a>
+
+                    <p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4 september to 4 November</p>
+                </div>
+                
+</div>
+</div>
+
+
+    <div>
+        <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/23v42546-t-560x340.jpg" alt="" class="carousel-cell">
+ 
+        <div class="o">
+            <h1>The phantom</h1>
+            <h3>Performance</h3>
+            <div class="anfal">
+            <a href="#" class="btn  btn-primary d-flex"
+                    style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;"><h2>Read
+                    more</h2></a>
+
+                    <p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4 september to 4 November</p>
+                </div>
+</div>
+
+
+    </div>
+    <div>
+        <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/fsd8fs9f839-t-560x340.jpg" alt="" class="carousel-cell">
+
+ 
+        <div class="s">
+            <h1> The odyssey</h1>
+            <h3>Performance</h3>
+            <div class="anfal">
+            <a href="#" class="btn  btn-primary d-flex"
+                    style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;"><h2>Read
+                    more</h2></a>
+
+
+                    <p style="color:khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4 september to 4 November</p>
+                </div>
+                </div>
+
+    </div>
+    <div>
+        <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/1v1b15n576vb-t-560x340.jpg" alt="" class="carousel-cell">
+
+
+
+
+         
+        <div class="c">
+            <h1>Comming Clean</h1>
+            <h3>Performance</h3>
+            <div class="anfal">
+            
+            <a href="#" class="btn  btn-primary d-flex"
+                    style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;"><h2>Read
+                    more</h2></a>
+
+                    <p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4 september to 4 November</p>
+                </div>
+                
+</div>
+    </div>
+      <script>
+        $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+      </script>
+    </div>
+    
+</div>
+<div style="height: 130px;">
+    <h1 style="text-align: center;margin-top: 90px;color: black;font-weight: bold;font-size: 300%;">Upcoming shows</h1>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+.btn-outline-primary:hover {
+    background-color: black !important;
+    color:white !important;
+}
+
+.btn-primary:hover {
+    background-color:black!important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+*{
+    font-family: 'Playfair Display', serif;
+}
+.card-title{font-size:50px;
+    text-shadow: 20px;
+    font-weight: lighter;
+    
+
+}
+.card-text2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style:italic;
+    color: darkorange;
+}
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+background: #EEE;
+
+}
+
+.carousel-cell {
+width:500px;
+height: 300px;
+margin-right: 10px;
+background: #8C8;
+border-radius: 5px;
+counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+display: block;
+text-align: center;
+content: counter(carousel-cell);
+line-height: 200px;
+font-size: 80px;
+color: white;
+}
+.container-fluide{
+background-color: black;
+}
+.memon{
+background-color:black;
+height: 200px;
+}
+.btn{
+width: 150px;
+height: 50px;
+margin-left: 30px;
+margin-top: 30px;
+}
+h1{
+color: aliceblue;
+margin-left: 30px;
+}
+h3{
+color:  khaki;
+margin-left: 30px;
+}
+.s{
+
+    font-style: initial;
+    color: aqua;
+}
+#raza{
+background-color: black;
+height: 180px;
+
+
+}
+.j{
+padding-top: 40px;
+text-align: center;
+font-weight: bold;
+font-size: 300%;
+ 
+
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: lighter;
+    /* font-style: inherit; */
+    font-family: sans-serif;
+padding-left: 9px;
+}
+.hamza{
+    margin-left: 670px;
+    margin-top: 20px;
+}
+.anfal{
+display: flex;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
