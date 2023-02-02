@@ -13,100 +13,119 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
     <script src="/path/to/flickity.pkgd.min.js"></script>
-<link rel="stylesheet" href="css/style.css">
-<script src="js/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
     <style>
         .btn-outline-primary:hover {
             background-color: black !important;
-            color:white !important;
+            color: white !important;
         }
 
         .btn-primary:hover {
-            background-color:black!important;
+            background-color: black !important;
             color: white !important;
             border: 1px solid white !important;
         }
-        *{
+
+        * {
             font-family: 'Playfair Display', serif;
         }
-        .card-title{font-size:50px;
+
+        .card-title {
+            font-size: 50px;
             text-shadow: 20px;
             font-weight: lighter;
-            
-        
+
+
         }
-        .card-text2{
+
+        .card-text2 {
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-style:italic;
+            font-style: italic;
             color: darkorange;
         }
+
         /* external css: flickity.css */
 
-* { box-sizing: border-box; }
+        * {
+            box-sizing: border-box;
+        }
 
-body { font-family: sans-serif; }
+        body {
+            font-family: sans-serif;
+        }
 
-.carousel {
-  background: #EEE;
-}
+        .carousel {
+            background: #EEE;
+        }
 
-.carousel-cell {
-  width:500px;
-  height: 300px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
+        .carousel-cell {
+            width: 500px;
+            height: 300px;
+            margin-right: 10px;
+            background: #8C8;
+            border-radius: 5px;
+            counter-increment: carousel-cell;
+        }
 
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
-.container-fluide{
-    background-color: black;
-}
-.memon{
-    background-color:black;
-    height: 200px;
-}
-.btn{
-    width: 200px;
-    height: 60px;
-    margin-left: 30px;
-    margin-top: 30px;
-}
-h1{
-    color: aliceblue;
-  margin-left: 30px;
-}
-h3{
-    color:  rgb(136, 107, 52);
-    margin-left: 30px;
-}
-h3:hover{
+        /* cell number */
+        .carousel-cell:before {
+            display: block;
+            text-align: center;
+            content: counter(carousel-cell);
+            line-height: 200px;
+            font-size: 80px;
+            color: white;
+        }
 
-    color:white ;
-    transition: 3s;
-}
-h1:hover{
+        .container-fluide {
+            background-color: black;
+        }
 
-color: darkgray;
-transition:2s ;
+        .memon {
+            background-color: black;
+            height: 200px;
+        }
 
+        .btn {
+            width: 200px;
+            height: 60px;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
 
+        h1 {
+            color: aliceblue;
+            margin-left: 30px;
+        }
 
-}
+        h3 {
+            color: rgb(136, 107, 52);
+            margin-left: 30px;
+        }
+
+        h3:hover {
+
+            color: white;
+            transition: 3s;
+        }
+
+        h1:hover {
+
+            color: darkgray;
+            transition: 2s;
+        }
+        .card{
+
+            border: none;
+        }
     </style>
 
 </head>
@@ -163,305 +182,460 @@ transition:2s ;
 
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-       
-        
+
+
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="image/curzon-mayfair.jpg" class="d-block w-100" alt="...">
-                
+
                 <div class="carousel-caption d-none d-md-block my-auto">
                     <div>
-                        
-                    <button class="btn btn-lg btn-primary bg-white text-dark" style="border: none; border-radius: 0%;margin-bottom: 220px;">Book Now</button>
-                    <button class="btn btn-lg btn-outline-primary ms-3 text-white"
-                        style="border: 1px solid white; border-radius: 0%; margin-bottom: 220px;  ">Discover</button>
+
+                        <button class="btn btn-lg btn-primary bg-white text-dark"
+                            style="border: none; border-radius: 0%;margin-bottom: 220px;">Book Now</button>
+                        <button class="btn btn-lg btn-outline-primary ms-3 text-white"
+                            style="border: 1px solid white; border-radius: 0%; margin-bottom: 220px;  ">Discover</button>
 
 
 
 
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-    </div>
-    <div class="card text-white" style="background-color: black;">
-        <div class="card-body d-flex justify-content-between mt-5 mb-5 ps-5">
-            <div>
-                <h5 class="card-title fs-3" style="margin-left: 150px;">Get your tickets</h5>
-                <p class="card-text" style="margin-left: 150px;">Choose the play and the day on which you would like to see it.</p>
-            </div>
-            <div class="pe-5"> 
-                <a href="#" class="btn  btn-primary d-flex"
-                    style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;padding-left: 50px;padding-top: 17px;font-size: medium;margin-right: 90px;">BUY
-                    TICKETS</a>
-            </div>
         </div>
-    </div>
-<!-- <div class="img2";></div>
+        <!-- <div class="card text-white" style="background-color: black;">
+            <div class="card-body d-flex justify-content-between mt-5 mb-5 ps-5">
+                <div>
+                    <h5 class="card-title fs-3" style="margin-left: 150px;">Get your tickets</h5>
+                    <p class="card-text" style="margin-left: 150px;">Choose the play and the day on which you would like
+                        to see it.</p>
+                </div>
+                <div class="pe-5">
+                    <a href="#" class="btn  btn-primary d-flex"
+                        style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;padding-left: 50px;padding-top: 17px;font-size: medium;margin-right: 90px;">BUY
+                        TICKETS</a>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="img2";></div>
     <h1>Welcome to The Theatre</h1>
     <img style="width: 100%;height:500px ;" src="./image/pngtree-gray-gradient-stage-light-background-image_362702.jpg" alt="">
 
     <h1>Welcome to The Theatre</h1>
 </div> -->
-<div class="container-fluid">
-<div class="card bg-dark text-dark wd-300 hi-400">
-    <img src="./image/pngtree-gray-gradient-stage-light-background-image_362702.jpg" class="card-img" alt="...">
-    <div class="card-img-overlay" style="text-align:center;margin-top: 100px;">
-      <h5 class="card-title">Welcome to The Theatre </h5>
-      <p class="card-text mt-4">When thou shalt be disposed to set me light
-        And place my merit in the eye of scorn,<br>Upon thy side against myself I’ll fight And prove thee virtuous,<br> though thou art forsworn.With mine own weakness being best acquainted,<br>Upon thy part I can set down a story Of faults conceal’d,<br> wherein I am attainted, That thou in losing me shalt win much glory. </p>
-      <p class="card-text2 pt-5 fs-3 ">Willaim Shakespeare's</p>
+        <!-- <div class="container-fluid">
+            <div class="card bg-dark text-dark wd-300 hi-400">
+                <img src="./image/pngtree-gray-gradient-stage-light-background-image_362702.jpg" class="card-img"
+                    alt="...">
+                <div class="card-img-overlay" style="text-align:center;margin-top: 100px;">
+                    <h5 class="card-title">Welcome to The Theatre </h5>
+                    <p class="card-text mt-4">When thou shalt be disposed to set me light
+                        And place my merit in the eye of scorn,<br>Upon thy side against myself I’ll fight And prove
+                        thee virtuous,<br> though thou art forsworn.With mine own weakness being best
+                        acquainted,<br>Upon thy part I can set down a story Of faults conceal’d,<br> wherein I am
+                        attainted, That thou in losing me shalt win much glory. </p>
+                    <p class="card-text2 pt-5 fs-3 ">Willaim Shakespeare's</p>
 
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div id="raza">
+            <h1 class="j">Featured Shows</h1>
+            <img class="hamza" src="./image/cover (3).jpg" alt="">
+            <div>
+
+            </div>
+        </div> -->
+
+
+
+
+
+
+
+        <div class="container-fluid">
+
+
+            <!-- Flickity HTML init -->
+            <div class="carousel" data-flickity='{ "wrapAround": true }' style="background-color:black ;">
+                <div>
+                    <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/8571476419_2d8fe904eb_o-t-560x340.jpg"
+                        alt="" class="carousel-cell">
+                    <div class="memon">
+                        <H1>Queen Anne</H1>
+                        <h3>Performance</h3>
+                        <div class="anfal">
+                            <a href="#" class="btn  btn-primary d-flex"
+                                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;">
+                                <h2>Read
+                                    more</h2>
+                            </a>
+                            <p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4
+                                september to 4 November</p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div>
+                    <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/1v1b15n576vb-t-560x340.jpg"
+                        alt="" class="carousel-cell">
+
+                    <div class="anne">
+                        <h1>The colour purple</h1>
+                        <h3>Performance</h3>
+                        <div class="anfal">
+                            <a href="#" class="btn  btn-primary d-flex"
+                                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;">
+                                <h2>Read
+                                    more</h2>
+                            </a>
+
+                            <p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4
+                                september to 4 November</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/8572552460_df514f1e42_o-t-560x340.jpg"
+                        alt="" class="carousel-cell">
+
+                    <div class="n">
+                        <h1>The majority</h1>
+                        <h3>Performance</h3>
+                        <div class="anfal">
+                            <a href="#" class="btn  btn-primary d-flex"
+                                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;">
+                                <h2>Read
+                                    more</h2>
+                            </a>
+
+                            <p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4
+                                september to 4 November</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div>
+                    <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/23v42546-t-560x340.jpg" alt=""
+                        class="carousel-cell">
+
+                    <div class="o">
+                        <h1>The phantom</h1>
+                        <h3>Performance</h3>
+                        <div class="anfal">
+                            <a href="#" class="btn  btn-primary d-flex"
+                                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;">
+                                <h2>Read
+                                    more</h2>
+                            </a>
+
+                            <p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4
+                                september to 4 November</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div>
+                    <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/fsd8fs9f839-t-560x340.jpg"
+                        alt="" class="carousel-cell">
+
+
+                    <div class="s">
+                        <h1> The odyssey</h1>
+                        <h3>Performance</h3>
+                        <div class="anfal">
+                            <a href="#" class="btn  btn-primary d-flex"
+                                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;">
+                                <h2>Read
+                                    more</h2>
+                            </a>
+
+
+                            <p style="color:khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4
+                                september to 4 November</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/1v1b15n576vb-t-560x340.jpg"
+                        alt="" class="carousel-cell">
+
+
+
+
+
+                    <div class="c">
+                        <h1>Comming Clean</h1>
+                        <h3>Performance</h3>
+                        <div class="anfal">
+
+                            <a href="#" class="btn  btn-primary d-flex"
+                                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;">
+                                <h2>Read
+                                    more</h2>
+                            </a>
+
+                            <p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4
+                                september to 4 November</p>
+                        </div>
+
+                    </div>
+                </div>
+                <script>
+                    $('.main-carousel').flickity({
+                        // options
+                        cellAlign: 'left',
+                        contain: true
+                    });
+                </script>
+            </div>
+
+        </div>
+        <div style="height: 130px;">
+            <h1 style="text-align: center;margin-top: 90px;color: black;font-weight: bold;font-size: 300%;">Upcoming
+                shows</h1>
+        </div>
+
+
+
+        <div class="container">
+            <ul class="nav justify-content-center nav-tabs mb-5" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Drama</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Ballet</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Opera</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="image/c1.jpg" class="card-img" alt="...">
+                                    <a href="#" class="btn  btn-primary d-flex"
+                                        style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;">
+                                        <h2>Read
+                                            more</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="image/c2.jpg" class="card-img" alt="...">
+                                    <a href="#" class="btn  btn-primary d-flex"
+                                        style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;">
+                                        <h2>Read
+                                            more</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="image/c3.jpg" class="card-img" alt="...">
+                                    <a href="#" class="btn  btn-primary d-flex"
+                                        style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;">
+                                        <h2>Read
+                                            more</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="image/c4.jpg" class="card-img" alt="...">
+                                    <a href="#" class="btn  btn-primary d-flex"
+                                        style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;">
+                                        <h2>Read
+                                            more</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="image/c5.jpg" class="card-img" alt="...">
+                                    <a href="#" class="btn  btn-primary d-flex"
+                                        style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;">
+                                        <h2>Read
+                                            more</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="image/c6.jpg" class="card-img" alt="...">
+                                    <a href="#" class="btn  btn-primary d-flex"
+                                        style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;">
+                                        <h2>Read
+                                            more</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+<div class="container-fluid " style="background-color: black">
+
+    <div>
+        <h1 class="text-white fs-1 fw-bold pt-5 text-center">Our Actors</h1>
     </div>
-  </div>
-  </div>
 
-<div id="raza">
-    <h1 class="j">Featured Shows</h1>
-    <img class="hamza" src="./image/cover (3).jpg" alt="">
-   <div>
-    
-   </div>
+        <div class="row g-2 mt-5">
+            <div class="col">
+                <div class="card w-50">
+                    <img src="image/actor.jpg" style="height: 150px; width: 150px;" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body text-center text-white text-white">
+                    <p class="card-title fs-6 fw-bold">Bob Carnagy</p>
+                    <p class="card-text">Actor</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card w-50">
+                    <img src="image/actor2.jpg" style="height: 150px; width: 150px;" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body text-center text-white">
+                    <p class="card-title fs-6 fw-bold">Max Turner</p>
+                    <p class="card-text">Actor</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card w-50">
+                    <img src="image/actor3.jpg" style="height: 150px; width: 150px;" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body text-center text-white">
+                    <p class="card-title fs-6 fw-bold">Amy Adams</p>
+                    <p class="card-text">Actress</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card w-50">
+                    <img src="image/actor4.jpg" style="height: 150px; width: 150px;" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body text-center text-white">
+                    <p class="card-title fs-6 fw-bold">Julia Jameson</p>
+                    <p class="card-text">Actress</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card w-50">
+                    <img src="image/actor5.jpg" style="height: 150px; width: 150px;" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body text-center text-white">
+                    <p class="card-title fs-6 fw-bold">Steve Derie</p>
+                    <p class="card-text">Actor</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card w-50">
+                    <img src="image/actor6.jpg" style="height: 150px; width: 150px;" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body text-center text-white">
+                    <p class="card-title fs-6 fw-bold">David Brackham</p>
+                    <p class="card-text">Actor</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card w-50">
+                    <img src="image/actor7.jpg" style="height: 150px; width: 150px;" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body text-center text-white">
+                    <p class="card-title fs-6 fw-bold">Matilda Lass</p>
+                    <p class="card-text">Actor</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card w-50">
+                    <img src="image/actor8.jpg" style="height: 150px; width: 150px;" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body text-center text-white">
+                    <p class="card-title fs-6 fw-bold">Alice Vander</p>
+                    <p class="card-text">Actress</p>
+                </div>
+            </div>
+           
+        </div>
+
 </div>
 
 
 
 
-
-
-
-<div class="container-fluide">
-  
-
-    <!-- Flickity HTML init -->
-    <div class="carousel"
-      data-flickity='{ "wrapAround": true }' style="background-color:black ;">
-      <div>
-      <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/8571476419_2d8fe904eb_o-t-560x340.jpg" alt="" class="carousel-cell">
-    <div class="memon">
-        <H1>Queen Anne</H1>
-        <h3>Performance</h3>
-        <div class="anfal">
-        <a href="#" class="btn  btn-primary d-flex"
-                    style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;"><h2>Read
-                    more</h2></a>
-<p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4 september to 4 November</p>
-                </div>         
-                        
-                    
-    </div>
-    </div>
-    <div>
-    <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/1v1b15n576vb-t-560x340.jpg" alt="" class="carousel-cell">
-
-    <div class="anne">
-<h1 >The colour purple</h1>
-<h3>Performance</h3>
-<div class="anfal">
-<a href="#" class="btn  btn-primary d-flex"
-                    style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;"><h2>Read
-                    more</h2></a>
-                    
-                    <p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4 september to 4 November</p>
-                </div>
-    </div>
-   </div>
-    <div>
-        <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/8572552460_df514f1e42_o-t-560x340.jpg" alt="" class="carousel-cell">
-        
-        <div class="n">
-            <h1>The majority</h1>
-            <h3>Performance</h3>
-            <div class="anfal">
-            <a href="#" class="btn  btn-primary d-flex"
-                    style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;"><h2>Read
-                    more</h2></a>
-
-                    <p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4 september to 4 November</p>
-                </div>
-                
-</div>
-</div>
-
+<div class="container-fluid ">
 
     <div>
-        <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/23v42546-t-560x340.jpg" alt="" class="carousel-cell">
- 
-        <div class="o">
-            <h1>The phantom</h1>
-            <h3>Performance</h3>
-            <div class="anfal">
-            <a href="#" class="btn  btn-primary d-flex"
-                    style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;"><h2>Read
-                    more</h2></a>
-
-                    <p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4 september to 4 November</p>
-                </div>
-</div>
-
-
+        <h1 class="text-dark fs-1 fw-bold pt-5 text-center">Upcoming Events</h1>
     </div>
-    <div>
-        <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/fsd8fs9f839-t-560x340.jpg" alt="" class="carousel-cell">
 
- 
-        <div class="s">
-            <h1> The odyssey</h1>
-            <h3>Performance</h3>
-            <div class="anfal">
-            <a href="#" class="btn  btn-primary d-flex"
-                    style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;"><h2>Read
-                    more</h2></a>
+    <hr class="w-75 mx-auto">
 
-
-                    <p style="color:khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4 september to 4 November</p>
-                </div>
-                </div>
-
-    </div>
-    <div>
-        <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/1v1b15n576vb-t-560x340.jpg" alt="" class="carousel-cell">
-
-
-
-
+<div class="container mt-5">
+    <table class="table table-striped ">
+      
+        <tbody>
+          <tr>
+            <th scope="row">12<sup>th</sup>April</th>
+            <td>April 12, 2023 - April 18, 2023</td>
+            <td>The Isley Brothers</td>
          
-        <div class="c">
-            <h1>Comming Clean</h1>
-            <h3>Performance</h3>
-            <div class="anfal">
-            
-            <a href="#" class="btn  btn-primary d-flex"
-                    style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 150px;height: 50;"><h2>Read
-                    more</h2></a>
-
-                    <p style="color: khaki;display: flex;padding-top: 65px; padding-left: 15px;"> from 4 september to 4 November</p>
-                </div>
-                
-</div>
-    </div>
-      <script>
-        $('.main-carousel').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true
-});
-      </script>
-    </div>
-    
-</div>
-<div style="height: 130px;">
-    <h1 style="text-align: center;margin-top: 90px;color: black;font-weight: bold;font-size: 300%;">Upcoming shows</h1>
+          </tr>
+          <tr>
+            <th scope="row">24<sup>th</sup>April</th>
+            <td>April 24, 2023 - May 2, 2023</td>
+            <td>June Historic Tour</td>
+       
+          </tr>
+          <tr>
+            <th scope="row">25<sup>th</sup>April</th>
+            <td>All Day</td>
+            <td>Sister Act, Abundantly!</td>
+          </tr>
+        </tbody>
+      </table>
 </div>
 
-
-<div class="container d-flex justify-content-center">
-    <button type="button" class="btn btn-light btn-lg" id="drama">Drama</button>
-    <button type="button" class="btn btn-light btn-lg" id="ballet">Ballet</button>
-    <button type="button" class="btn btn-light btn-lg" id="opera">Opera</button>
+<hr class="w-75 mx-auto mt-5">
 </div>
-
-
-<div class="container mt-5" id="div1">
-    <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-                <img src="image/c1.jpg" class="card-img" alt="...">
-                <a href="#" class="btn  btn-primary d-flex"
-                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;"><h2>Read
-                more</h2></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-                <img src="image/c2.jpg" class="card-img" alt="...">
-                <a href="#" class="btn  btn-primary d-flex"
-                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;"><h2>Read
-                more</h2></a>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
-<div class="container mt-5" id="div2">
-    <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-                <img src="image/c3.jpg" class="card-img" alt="...">
-                <a href="#" class="btn  btn-primary d-flex"
-                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;"><h2>Read
-                more</h2></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-                <img src="image/c4.jpg" class="card-img" alt="...">
-                <a href="#" class="btn  btn-primary d-flex"
-                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;"><h2>Read
-                more</h2></a>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
-<div class="container mt-5" id="div3">
-    <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-                <img src="image/c5.jpg" class="card-img" alt="...">
-                <a href="#" class="btn  btn-primary d-flex"
-                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;"><h2>Read
-                more</h2></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-                <img src="image/c6.jpg" class="card-img" alt="...">
-                <a href="#" class="btn  btn-primary d-flex"
-                style="border: none; background-color: rgb(136, 107, 52); border-radius: 0%;width: 140px;height: 50;"><h2>Read
-                more</h2></a>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
-
-
-
-
-
-
-
-
-<script>
-
-$(document).ready(function(){
-    $("#drama").click(function(){
-        $("#div1").show();
-    })
-    $("#ballet").click(function(){
-        $("#div2").hide();
-    })
-    $("#opera").click(function(){
-        $("#div3").hide();
-    })
-});
-
-
-</script>
-
-
-
 
 </body>
 
