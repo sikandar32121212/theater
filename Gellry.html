@@ -1,0 +1,293 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo.png">
+    <title>Theatre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <script src="/path/to/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+        .btn-outline-primary:hover {
+            background-color: black !important;
+            color: white !important;
+        }
+
+        .btn-primary:hover {
+            background-color: black !important;
+            color: white !important;
+            border: 1px solid white !important;
+        }
+
+        * {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .card-title {
+            font-size: 50px;
+            text-shadow: 20px;
+            font-weight: lighter;
+
+
+        }
+
+        .card-text2 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: italic;
+            color: darkorange;
+        }
+
+        /* external css: flickity.css */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .carousel {
+            background: #EEE;
+        }
+
+        .carousel-cell {
+            width: 500px;
+            height: 200px;
+            margin-right: 10px;
+            background: #8C8;
+            border-radius: 5px;
+            counter-increment: carousel-cell;
+        }
+
+        /* cell number */
+        .carousel-cell:before {
+            display: block;
+            text-align: center;
+            content: counter(carousel-cell);
+            line-height: 200px;
+            font-size: 80px;
+            color: white;
+        }
+
+        .container-fluide {
+            background-color: black;
+        }
+
+        .memon {
+            background-color: black;
+            height: 200px;
+        }
+
+        .btn {
+            width: 200px;
+            height: 60px;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        h1 {
+            color: aliceblue;
+            margin-left: 30px;
+        }
+
+        h3 {
+            color: rgb(136, 107, 52);
+            margin-left: 30px;
+        }
+
+        h3:hover {
+
+            color: white;
+            transition: 3s;
+        }
+
+        h1:hover {
+
+            color: darkgray;
+            transition: 2s;
+        }
+        .card{
+
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="image/logo.png" height="60px" width="80px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Upcoming Events </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Theatre Shows
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Urdu Theatre Show</a></li>
+                            <li><a class="dropdown-item" href="#">Hindi Theatre Show</a></li>
+                            <li><a class="dropdown-item" href="#">English Theatre Show</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Auditoriums </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Gallery </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Magazine </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+
+                    <i class="fa fa-search fs-5 pe-3 text-white"></i>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+       <div class="container-fluid">
+        <div class="img w-100 h-75">    <img src="https://moar-prod.imgix.net/380994f9-8db8-4f5b-87c5-ee21fc7db1a5/OneidaNationGallery.CreditMoAR.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C223%2C3600%2C1440" class="d-block w-100" alt="...">
+        </div>
+                    <div style="position: absolute;bottom:20%;left: 35%;" class="text-center">
+                        <h1 style="margin-bottom: 150pt;font-size: 80pt;">Gallery</h1>
+                    </div>
+                </div>
+
+        
+       <div class="container " style="margin-top: 50pt;line-height: 300pt;">
+        <div class="row">
+
+            <!-- First slider -->
+            <div class="col col-sm-12 col-md-12 col-lg-6 col-12">
+        <h2 style="margin-right: 900pt;font-size: 30pt;font-family: sans-serif;font-style: italic;font-weight: bold">Slider</h2>
+
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 500px;height: 300px;">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                
+                <img src="https://theater.cmsmasters.net/wp-content/uploads/2016/06/8020795879_04c1f2f0c1_o.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/67s868737sdf.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/ballet-ballerina-performance-don-quixote-46158.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+<!-- second slider -->
+    <div class="col col-sm-12 col-md-12 col-lg-6 col-12">
+    <h2 style="margin-left: 250pt;font-size: 30pt;font-family: sans-serif;font-style: italic;font-weight: bold;"> Slider 2 </h2>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="width: 375pt;height: 300pt;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/23v42546-860x500.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/1v1b15n576vb-860x500.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://theater.cmsmasters.net/wp-content/uploads/2015/01/299385981_d0cd7e05da_o-860x500.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <!-- <p>Some representative placeholder content for the third slide.</p> -->
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+    </div>
+</div>
+
+        
+       
+
+
+        
+        <div class="card-group">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+              </div>
+            </div>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+              </div>
+            </div>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
